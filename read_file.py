@@ -13,3 +13,10 @@ average = addnumber / len(data)
 
 print('總共有', len(data), '筆資料')
 print('留言平均長度是', average)
+
+filter_list = []
+for filter_line in data:
+	if len(filter_line) < 100:
+	filter_list.append(filter_line)
+
+print('總共有', len(filter_list),'筆資料長度小於100') 
